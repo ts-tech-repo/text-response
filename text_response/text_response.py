@@ -31,7 +31,7 @@ class TextResponseXBlock(XBlock):
         The primary view of the TextResponseXBlock, shown to students
         when viewing courses.
         """
-        html = self.resource_string("static/html/text_response.html")
+        html = self.resource_string("templates/text_response.html")
         frag = Fragment(html.format(self=self))
         frag.add_css(self.resource_string("static/css/text_response.css"))
         frag.add_javascript(self.resource_string("static/js/src/text_response.js"))
