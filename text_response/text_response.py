@@ -31,10 +31,10 @@ class TextResponseXBlock(XBlock):
         The primary view of the TextResponseXBlock, shown to students
         when viewing courses.
         """
-        html = self.resource_string("static/html/text-response.html")
+        html = self.resource_string("static/html/text_response.html")
         frag = Fragment(html.format(self=self))
-        frag.add_css(self.resource_string("static/css/text-response.css"))
-        frag.add_javascript(self.resource_string("static/js/src/text-response.js"))
+        frag.add_css(self.resource_string("static/css/text_response.css"))
+        frag.add_javascript(self.resource_string("static/js/src/text_response.js"))
         frag.initialize_js('TextResponseXBlock')
         return frag
 
@@ -58,13 +58,13 @@ class TextResponseXBlock(XBlock):
         """A canned scenario for display in the workbench."""
         return [
             ("TextResponseXBlock",
-             """<text-response/>
+             """<text_response/>
              """),
             ("Multiple TextResponseXBlock",
              """<vertical_demo>
-                <text-response/>
-                <text-response/>
-                <text-response/>
+                <text_response/>
+                <text_response/>
+                <text_response/>
                 </vertical_demo>
              """),
         ]
