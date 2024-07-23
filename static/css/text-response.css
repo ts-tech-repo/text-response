@@ -1,0 +1,9 @@
+/* CSS for CustomFreeTextResponseXBlock */
+
+.text-response_xblock .count {
+    font-weight: bold;
+}
+
+.text-response_xblock p {
+    cursor: pointer;
+}
